@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #ff6347;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.flower-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.flower {
+    width: 60px;
+    height: 60px;
+    animation: flowerAnim 2s infinite alternate;
+}
+
+@keyframes flowerAnim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
